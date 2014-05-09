@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/customView/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2014 Sotirios-Fivos Stamopoulos
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.customView.displayName">Custom View Plugin</message>
+	<message key="plugins.generic.customView.description">This plugin provides a custom view for article metadata.</message>
+	<message key="plugins.generic.customView.editViews">Edit Views</message>
+	<message key="plugins.generic.customView.views">Views</message>
+	<message key="plugins.generic.customView.metadataTitle">Metadata Title</message>
+	<message key="plugins.generic.customView.Display">Display</message>
+        <message key="plugins.generic.customView.clear">Clear</message>
+        <message key="plugins.generic.customView.enable">Enable</message>
+        <message key="plugins.generic.customView.initialize">Initialize</message>
+        <message key="plugins.generic.customView.delete">Delete</message>
+        
+        <!-- Edit Views Form -->
+        <message key="plugins.generic.customView.form.titleRequired">Please provide a title for this view</message>
+        <message key="plugins.generic.customView.form.creatorRequired">Please provide a creator for this view</message>
+        <message key="plugins.generic.customView.form.subjectRequired">Please provide a subject for this view</message>
+        <message key="plugins.generic.customView.form.keywordsRequired">Please provide a keyword for this view</message>
+        <message key="plugins.generic.customView.form.descriptionRequired">Please provide a description for this view</message>
+        <message key="plugins.generic.customView.form.publisherRequired">Please provide a publisher for this view</message>
+        <message key="plugins.generic.customView.form.creatorRequired">Please provide a creator for this view</message>
+        <message key="plugins.generic.customView.form.contributorRequired">Please provide a contributor for this view</message>
+        <message key="plugins.generic.customView.form.statusRequired">Please provide a status for this view</message>
+        <message key="plugins.generic.customView.form.typeRequired">Please provide a type for this view</message>
+        <message key="plugins.generic.customView.form.formatRequired">Please provide a format for this view</message>
+        <message key="plugins.generic.customView.form.identifierRequired">Please provide an identifier for this view</message>
+        <message key="plugins.generic.customView.form.sourceRequired">Please provide a source for this view</message>
+        <message key="plugins.generic.customView.form.languageRequired">Please provide a language for this view</message>
+        <message key="plugins.generic.customView.form.relationRequired">Please provide a relation for this view</message>
+        <message key="plugins.generic.customView.form.coverageRequired">Please provide coverage for this view</message>
+        <message key="plugins.generic.customView.form.rightsRequired">Please provide rights for this view</message>
+        <message key="plugins.generic.customView.form.title">Title</message>
+        <message key="plugins.generic.customView.form.creator">Creator</message>
+        <message key="plugins.generic.customView.form.subject">Subject</message>
+        <message key="plugins.generic.customView.form.keywords">Keywords</message>
+        <message key="plugins.generic.customView.form.description">Description</message>
+        <message key="plugins.generic.customView.form.publisher">Publisher</message>
+        <message key="plugins.generic.customView.form.contributor">Contributor</message>
+        <message key="plugins.generic.customView.form.date">Date</message>
+        <message key="plugins.generic.customView.form.status">Status and Genre</message>
+        <message key="plugins.generic.customView.form.type">Type</message>
+        <message key="plugins.generic.customView.form.format">Format</message>
+        <message key="plugins.generic.customView.form.identifier">Identifier</message>
+        <message key="plugins.generic.customView.form.source">Source</message>
+        <message key="plugins.generic.customView.form.language">Language</message>
+        <message key="plugins.generic.customView.form.realtion">Relation</message>
+        <message key="plugins.generic.customView.form.coverage">Coverage</message>
+        <message key="plugins.generic.customView.form.rights">Rights</message>
+        
+        
+        <!-- Edit Views Management -->
+        <message key="plugins.generic.customView.manager.editViews">Edit Views</message>
+        <message key="plugins.generic.customView.manager.metadata">METADATA</message>
+        <message key="plugins.generic.customView.manager.display">DISPLAY</message>
+        <message key="plugins.generic.customView.manager.label">LABEL</message>
+</locale>

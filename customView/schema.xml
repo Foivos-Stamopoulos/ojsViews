@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schema SYSTEM "../../../lib/pkp/dtd/xmlSchema.dtd">
+
+<!--
+  * plugins/generic/customView/schema.xml
+  *
+  * Copyright (c) 2014 Sotirios-Fivos Stamopoulos
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Custom view plugin schema in XML.
+  *
+  -->
+
+<schema version="0.2">
+
+	<!--
+	 *
+	 * TABLE  
+	 *
+	 -->
+	<table name="views">
+		<field name="view_id" type="I8">
+			<KEY/>
+			<AUTOINCREMENT/>
+		</field>
+		<field name="journal_id" type="I8">
+			<NOTNULL/>
+		</field>
+		<field name="display_title" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+		<field name="title_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>
+                <field name="display_creator" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="creator_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>
+                <field name="display_subject" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="subject_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>
+                <field name="display_keywords" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="keywords_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>
+                <field name="display_description" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="description_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                
+                <field name="display_publisher" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+		<field name="publisher_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                
+                <field name="display_contributor" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="contributor_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>
+                <field name="display_date" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="date_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                
+                <field name="display_status" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+		<field name="status_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                
+                <field name="display_type" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="type_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                
+                <field name="display_format" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+		<field name="format_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                 
+                <field name="display_identifier" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+		<field name="identifier_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                
+                <field name="display_source" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+		<field name="source_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>                                                                                                                            
+                <field name="display_language" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="language_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>  
+                <field name="display_relation" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="relation_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>
+                <field name="display_coverage" type="I1">
+			<NOTNULL/> 
+                        <DEFAULT VALUE="1"/>                                                                       			
+		</field>
+              	<field name="coverage_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field> 
+                
+                <field name="display_rights" type="I1">
+			<NOTNULL/>
+			<DEFAULT VALUE="1"/>
+		</field>
+		<field name="rights_label" type="C2" size="40">
+			<NOTNULL/>                                                                        			
+		</field>
+                                            
+
+	</table>
+</schema>
