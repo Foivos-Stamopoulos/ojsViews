@@ -344,14 +344,11 @@ class CustomViewPlugin extends GenericPlugin {
 				Locale::translate('manager.plugins.disable')
 			);
                         $verbs[] = array('views', __('plugins.generic.customView.views'));
-                        //$verbs[] = array('initialize', __('plugins.generic.customView.initialize'));
                         //$verbs[] = array('clear', __('plugins.generic.customView.clear'));
                         
                         
                         $customViewDao =& DAORegistry::getDAO('CustomViewDAO');                   
                         $viewId = $customViewDao->checkExistingView($journalId);
-                        //echo 'journal Id =' . $journalId;
-                        //echo 'view id='. $viewId;
                         if($viewId == null){
                             $customViewDao =& DAORegistry::getDAO('CustomViewDAO');                   
                             $customViewDao->insertCustomView($journalId);
@@ -415,12 +412,6 @@ class CustomViewPlugin extends GenericPlugin {
 				//	Request::redirect(null, 'manager', 'plugin', array('generic', $this->getName(), 'views'));
 				//}
 				return true;
-                        //case 'initialize':
-                            //pairnw to journalId k kalw tin insert apo to DAO
-                            //$journal =& Request::getJournal();
-                            //$journalId = $journal->getId();
-                            //$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
-                            //$customViewDao->insertCustomView($journalId);
                         //case 'clear':
                                 //$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
                                 //$customViewDao->deleteViewById($journalId);
