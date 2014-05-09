@@ -346,9 +346,7 @@ class CustomViewPlugin extends GenericPlugin {
                         $verbs[] = array('views', __('plugins.generic.customView.views'));
                         //$verbs[] = array('initialize', __('plugins.generic.customView.initialize'));
                         //$verbs[] = array('clear', __('plugins.generic.customView.clear'));
-                        $verbs[] = array('delete', __('plugins.generic.customView.delete'));
-                        //kathe fora pou kanw refresh ti selida ftiaxnei k alli eggrafi!!
-                        //EBALA ELEGXO, WSTE AN YPARXEI HDH TO JOURNAL ID NA MIN FTIAXNEI NEA EGGRAFI!!
+                        
                         
                         $customViewDao =& DAORegistry::getDAO('CustomViewDAO');                   
                         $viewId = $customViewDao->checkExistingView($journalId);
@@ -393,9 +391,6 @@ class CustomViewPlugin extends GenericPlugin {
                                    //$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
                                    //$customViewDao->deleteViewById($journalId);
                                 
-                        //case 'delete':
-                                //$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
-                                //$customViewDao->deleteViewById($journalId);
 			case 'editViews':				
 				$customViewId = !isset($args) || empty($args) ? null : (int) $args[0];
 				$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
