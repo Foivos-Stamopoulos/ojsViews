@@ -345,13 +345,12 @@ class CustomViewPlugin extends GenericPlugin {
 			);
                         $verbs[] = array('views', __('plugins.generic.customView.views'));
                         //$verbs[] = array('initialize', __('plugins.generic.customView.initialize'));
-                        $verbs[] = array('clear', __('plugins.generic.customView.clear'));
+                        //$verbs[] = array('clear', __('plugins.generic.customView.clear'));
                         $verbs[] = array('delete', __('plugins.generic.customView.delete'));
                         //kathe fora pou kanw refresh ti selida ftiaxnei k alli eggrafi!!
                         //EBALA ELEGXO, WSTE AN YPARXEI HDH TO JOURNAL ID NA MIN FTIAXNEI NEA EGGRAFI!!
                         
                         $customViewDao =& DAORegistry::getDAO('CustomViewDAO');                   
-                        //$customViewDao->insertCustomView($journalId);
                         $viewId = $customViewDao->checkExistingView($journalId);
                         //echo 'journal Id =' . $journalId;
                         //echo 'view id='. $viewId;
@@ -427,10 +426,10 @@ class CustomViewPlugin extends GenericPlugin {
                             //$journalId = $journal->getId();
                             //$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
                             //$customViewDao->insertCustomView($journalId);
-                        case 'clear':
-                                $customViewDao =& DAORegistry::getDAO('CustomViewDAO');
-                                $customViewDao->deleteViewById($journalId);
-                                Request::redirect(null, 'manager', 'plugin', null);
+                        //case 'clear':
+                                //$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
+                                //$customViewDao->deleteViewById($journalId);
+                                //Request::redirect(null, 'manager', 'plugin', null);
                         case 'update':
 				$customViewId = Request::getUserVar('viewId') == null ? null : (int) Request::getUserVar('viewId');
 				$customViewDao =& DAORegistry::getDAO('CustomViewDAO');
